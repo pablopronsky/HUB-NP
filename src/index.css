@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined');
+@import "tailwindcss";
+
+@theme {
+  --color-inverse-surface: #e5e2e1;
+  --color-primary-container: #25a475;
+  --color-surface-container: #201f1f;
+  --color-tertiary-container: #dd706b;
+  --color-tertiary-fixed-dim: #ffb3ae;
+  --color-surface-container-low: #1c1b1b;
+  --color-on-background: #e5e2e1;
+  --color-on-tertiary-container: #570b0e;
+  --color-inverse-on-surface: #313030;
+  --color-outline-variant: #3d4a42;
+  --color-outline: #87948b;
+  --color-on-primary-container: #00311f;
+  --color-on-primary-fixed: #002114;
+  --color-inverse-primary: #006c4a;
+  --color-on-tertiary-fixed-variant: #7f2928;
+  --color-on-error-container: #ffdad6;
+  --color-surface-tint: #68dba9;
+  --color-on-secondary: #303030;
+  --color-secondary-fixed: #e5e2e1;
+  --color-primary-fixed-dim: #68dba9;
+  --color-on-tertiary-fixed: #410004;
+  --color-secondary: #c8c6c5;
+  --color-surface-container-highest: #353534;
+  --color-secondary-fixed-dim: #c8c6c5;
+  --color-background: #131313;
+  --color-surface: #131313;
+  --color-primary: #68dba9;
+  --color-surface-bright: #393939;
+  --color-on-tertiary: #601214;
+  --color-surface-container-high: #2a2a2a;
+  --color-on-secondary-container: #b7b5b4;
+  --color-on-primary: #003825;
+  --color-error: #ffb4ab;
+  --color-surface-variant: #353534;
+  --color-on-surface-variant: #bccac0;
+  --color-on-secondary-fixed: #1b1b1c;
+  --color-tertiary: #ffb3ae;
+  --color-error-container: #93000a;
+  --color-surface-dim: #131313;
+  --color-primary-fixed: #85f8c4;
+  --color-secondary-container: #474746;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-on-secondary-fixed-variant: #474746;
+  --color-on-surface: #e5e2e1;
+  --color-on-error: #690005;
+  --color-on-primary-fixed-variant: #005137;
+  --color-tertiary-fixed: #ffdad7;
+  
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+  
+  --font-headline: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body min-h-screen antialiased selection:bg-primary selection:text-on-primary;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(19, 19, 19, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  .emerald-gradient-text {
+    background: linear-gradient(135deg, #68dba9, #25a475);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .emerald-glow {
+    box-shadow: 0 0 40px 4px rgba(104, 219, 169, 0.06);
+  }
+  .card-hover-effect {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-hover-effect:hover {
+    transform: translateY(-4px);
+    background-color: var(--color-surface-container-high);
+    box-shadow: 0 20px 40px -10px rgba(104, 219, 169, 0.05);
+  }
+  .ghost-border {
+    border: 1px solid rgba(61, 74, 66, 0.15);
+  }
+  .dashed-ghost-border {
+    border: 1px dashed rgba(61, 74, 66, 0.3);
+  }
+  
+  /* Material Symbols Fixer */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
