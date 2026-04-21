@@ -26,6 +26,15 @@ export default function Hub() {
     <div className="w-full animation-fade-in">
       {/* Hero Section */}
       <div className="mb-14 md:mb-20 max-w-3xl">
+        <div className="mb-8">
+          <img 
+            src="https://generative-ui-user-assets.s3.us-east-1.amazonaws.com/9dc0cf14-eaae-4ebc-bee9-afbc1b699c2d.png" 
+            alt="Nuevo Parket" 
+            className="h-10 md:h-12 object-contain"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+        
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-[#161616] border border-[#222] shadow-[inset_0_1px_4px_rgba(0,0,0,0.5)] mb-6">
           <span className="w-2 h-2 rounded-full bg-[#0b8043] animate-pulse drop-shadow-[0_0_4px_rgba(11,128,67,0.8)]"></span>
           <span className="font-label text-[0.65rem] text-[#0b8043] uppercase tracking-[0.15em] font-semibold flex items-center h-full">SISTEMA CENTRAL</span>
