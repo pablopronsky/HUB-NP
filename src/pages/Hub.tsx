@@ -28,7 +28,7 @@ export default function Hub() {
       <div className="mb-14 md:mb-20 max-w-3xl">
         <div className="mb-8">
           <img 
-            src="https://generative-ui-user-assets.s3.us-east-1.amazonaws.com/9dc0cf14-eaae-4ebc-bee9-afbc1b699c2d.png" 
+            src="https://i.imgur.com/8g4xUSM.png" 
             alt="Nuevo Parket" 
             className="h-10 md:h-12 object-contain"
             referrerPolicy="no-referrer"
